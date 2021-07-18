@@ -1,4 +1,5 @@
-import '../styles/globals.scss'
+import '../styles/globals.scss';
+import 'tailwindcss/tailwind.css';
 
 function MyApp({ Component, pageProps }) {
   // Use the layout defined at the page level, if available

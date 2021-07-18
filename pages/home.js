@@ -11,7 +11,7 @@ const Home = () => {
             title={"Home"}
         >
         </PageHeader>
-        <Card>
+        <Card className={"flex text-gray-500"}>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aut recusandae velit! Consequatur corporis, eum fuga, harum incidunt laboriosam minus necessitatibus neque non nostrum pariatur tempore. Dignissimos impedit rem tempora!
         </Card>
     </div>
