@@ -1,7 +1,6 @@
 import React from "react";
 import ParticlesLayout from "../ParticlesLayout";
-import {Layout, Typography, Menu, Popover, Button} from "antd";
-import {CalendarOutlined, HomeOutlined, SettingOutlined, UserOutlined} from "@ant-design/icons";
+import {Layout, Typography} from "antd";
 import DesktopLayoutHeader from "./DesktopLayoutHeader";
 import DesktopLayoutMenu from "./DesktopLayoutMenu";
 

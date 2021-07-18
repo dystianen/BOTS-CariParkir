@@ -1,4 +1,3 @@
-import ParticlesLayout from "../components/Layout/ParticlesLayout";
 import React from "react";
 import DefaultLayout from "../components/Layout/DefaultLayout";
 import {Card, PageHeader} from "antd";

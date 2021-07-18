@@ -1,6 +1,6 @@
 import React from 'react';
 import {Menu} from "antd";
-import {HomeOutlined, CalendarOutlined, SettingOutlined} from "@ant-design/icons";
+import {CalendarOutlined, HomeOutlined, SettingOutlined} from "@ant-design/icons";
 import Link from 'next/link';
 
 const DesktopLayoutMenu = (props) => (
