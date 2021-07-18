@@ -15,9 +15,9 @@ class MyDocument extends Document {
                         rel="stylesheet"
                     />
                 </Head>
-                <body>
-                <Main />
-                <NextScript />
+                <body id={"tailwind-selector"}>
+                    <Main />
+                    <NextScript />
                 </body>
             </Html>
         )

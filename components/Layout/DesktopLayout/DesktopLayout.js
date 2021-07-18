@@ -3,9 +3,7 @@ import ParticlesLayout from "../ParticlesLayout";
 import {Layout, Typography, Menu, Popover, Button} from "antd";
 import {CalendarOutlined, HomeOutlined, SettingOutlined, UserOutlined} from "@ant-design/icons";
 import DesktopLayoutHeader from "./DesktopLayoutHeader";
-import MenuList from "../../MenuList";
 import DesktopLayoutMenu from "./DesktopLayoutMenu";
-import styles from './DesktopLayout.module.css';
 
 const {Sider, Header, Content, Footer} = Layout;
 const {Paragraph, Text} = Typography;
@@ -22,16 +20,16 @@ const DesktopLayout = ({children}) => {
                 style={{
                 }}
             >
-                <Paragraph
-                    className={styles.brandName + " yo"}
+                <div
+                    className={"mt-6 mr-0 mb-12 ml-12 font-semibold p-0 text-xl"}
                 >
                     Boilerplate
-                </Paragraph>
+                </div>
                 <DesktopLayoutMenu/>
             </Sider>
             <Layout>
                 <DesktopLayoutHeader/>
-                <Content className={styles.content}>
+                <Content className={"pr-4"}>
                     {children}
                 </Content>
             </Layout>

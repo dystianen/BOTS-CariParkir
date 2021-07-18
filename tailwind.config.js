@@ -9,5 +9,7 @@ module.exports = {
         extend: {},
     },
     plugins: [],
+    important: '#tailwind-selector',
 };
+
 

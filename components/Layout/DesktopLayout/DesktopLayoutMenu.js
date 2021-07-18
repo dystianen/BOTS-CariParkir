@@ -1,15 +1,13 @@
 import React from 'react';
 import {Menu} from "antd";
-import {HomeOutlined} from "@ant-design/icons";
+import {HomeOutlined, CalendarOutlined, SettingOutlined} from "@ant-design/icons";
+import Link from 'next/link';
 
 const DesktopLayoutMenu = (props) => (
     <Menu
         defaultOpenKeys={["sub4"]}
         theme="light"
-        style={{
-            borderRightWidth: 0,
-            marginLeft: 24,
-        }}
+        className={"bg-transparent border-r-0 ml-6"}
         onClick={({keyPath, item}) => {
             // props.closeLeftDrawer();
         }}
@@ -21,16 +19,28 @@ const DesktopLayoutMenu = (props) => (
         forceSubMenuRender={true}
     >
         <Menu.Item key="home">
-            <HomeOutlined/>
-            <span>Home</span>
+            <Link href={"/home"}>
+                <a>
+                    <HomeOutlined/>
+                    <span>Home</span>
+                </a>
+            </Link>
         </Menu.Item>
         <Menu.Item key="about">
-            <HomeOutlined/>
-            <span>About</span>
+            <Link href={"/about"}>
+                <a>
+                    <CalendarOutlined/>
+                    <span>About</span>
+                </a>
+            </Link>
         </Menu.Item>
         <Menu.Item key="setting">
-            <HomeOutlined/>
-            <span>Setting</span>
+            <Link href={"/setting"}>
+                <a>
+                    <SettingOutlined/>
+                    <span>Setting</span>
+                </a>
+            </Link>
         </Menu.Item>
     </Menu>
 );
