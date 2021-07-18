@@ -1,8 +1,8 @@
 import React from "react";
 import DefaultLayout from "../components/Layout/DefaultLayout";
 import {Button, Card, PageHeader} from "antd";
-import {useStore} from "../store/store";
 import {observer} from "mobx-react-lite";
+import {useStore} from "../components/StoreProvider";
 
 const Home = observer(() => {
     const store = useStore();
