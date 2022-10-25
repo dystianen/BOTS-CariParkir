@@ -25,11 +25,12 @@ const Constraint = () => {
             <div className={'bg-[#F7FCFC] border-2 border-[#DFDFDF] h-20 flex items-center gap-2 rounded-lg px-5 mt-2'}>
                 <Image src={'/assets/icons/cariparkir.svg'} width={40} height={40} />
                 <div className={'flex flex-col'}>
-                    <span className={'font-semibold'}>081336274673</span>
-                    <span className={'text-[#FB5060] font-semibold text-sm'}>BELUM ADA TRANSAKSI</span>
+                    <span className={'font-semibold'}>CP-20220924-IaNr</span>
+                    {/*<span className={'text-[#FB5060] font-semibold text-sm'}>BELUM ADA TRANSAKSI</span>*/}
                 </div>
             </div>
 
+            <Transaction />
             <Transaction />
         </div>
     )
