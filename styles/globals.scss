@@ -9,3 +9,13 @@ body {
 body {
   background-color: #e3e8ee;
 }
+
+.ant-modal {
+  max-width: 380px !important;
+}
+
+.react-modal-sheet-container {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}

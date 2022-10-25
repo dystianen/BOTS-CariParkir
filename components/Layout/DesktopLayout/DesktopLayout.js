@@ -1,37 +1,22 @@
 import React from "react";
 import ParticlesLayout from "../ParticlesLayout";
-import {Layout, Typography} from "antd";
-import DesktopLayoutHeader from "./DesktopLayoutHeader";
-import DesktopLayoutMenu from "./DesktopLayoutMenu";
-
-const {Sider, Header, Content, Footer} = Layout;
-const {Paragraph, Text} = Typography;
+import {Layout, Image} from "antd";
+const {Content} = Layout;
 
 const DesktopLayout = ({children}) => {
     return <ParticlesLayout>
         <Layout
             theme={"light"}
-            className={"transparent"}
+            className={"relative max-w-2xl mx-auto bg-[#fafafa]"}
             hasSider={true}>
-            <Sider
-                className={"transparent"}
-                width={240}
-                style={{
-                }}
-            >
-                <div
-                    className={"mt-6 mr-0 mb-12 ml-12 font-semibold p-0 text-xl"}
-                >
-                    Boilerplate
+            <Content>
+                <div className={'min-h-screen'}>
+                    <div className={'z-50'}>{children}</div>
+                    {/*<div className={'absolute bottom-0 -mb-2 z-10'}>*/}
+                    {/*    <Image preview={false} src={'/assets/backgrounds/bg-pattern.png'} />*/}
+                    {/*</div>*/}
                 </div>
-                <DesktopLayoutMenu/>
-            </Sider>
-            <Layout>
-                <DesktopLayoutHeader/>
-                <Content className={"pr-4"}>
-                    {children}
-                </Content>
-            </Layout>
+            </Content>
         </Layout>
     </ParticlesLayout>
 }
