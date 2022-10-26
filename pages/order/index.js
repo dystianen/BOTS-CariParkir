@@ -57,7 +57,7 @@ const Payment = observer(() => {
                         </Form.Item>
 
                         <p>Dengan melanjutkan, saya telah membaca dan menyetujui <span
-                            className={'text-[#FF9400] underline underline-offset-2'}>Syarat & Ketentuan</span> di
+                            className={'text-[#FF9400] underline underline-offset-2 hover:cursor-pointer'} onClick={() => router.push('/policy-terms')}>Syarat & Ketentuan</span> di
                             CariParkir.</p>
 
                         <Divider dashed className={'my-8 border-[#c1c1c1]'} style={{width: '2px 0 0'}}/>
