@@ -38,15 +38,15 @@ const PolicyTerms = observer(() => {
             label: `Syarat & Ketentuan`,
             key: '1',
             children: [
-                <p className="font-bold text-[10px] md:text-sm text-center mb-2" > Syarat - syarat & Ketentuan[Layanan] <i> (Terms & Condition of Serfices)</i></p>,
-                <p className="font-bold text-[11px] md:text-base mb-7">PENTING: <span className="font-normal text-[10px] md:text-sm">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</span></p>,
-                <p className="font-normal text-[10px] md:text-sm mb-7">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>,
-                <p className="font-normal text-[10px] md:text-sm mb-7">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>,
-                <p className="font-bold text-[11px] md:text-base">Ketentuan Umum</p>,
+                <p className="font-bold text-xs md:text-sm lg:text-base text-center mb-2" > Syarat - syarat & Ketentuan[Layanan] <i> (Terms & Condition of Serfices)</i></p>,
+                <p className="font-bold text-xs md:text-base mb-7">PENTING: <span className="font-normal text-xs md:text-sm">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</span></p>,
+                <p className="font-normal text-xs md:text-sm mb-7">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>,
+                <p className="font-normal text-xs md:text-sm mb-7">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>,
+                <p className="font-bold text-xs md:text-base">Ketentuan Umum</p>,
                 general_requirements.map(value => (
                     <div className="flex">
-                        <p key={value?.key} className="font-normal text-[10px] md:text-sm mb-0">{value?.key}.</p>
-                        <p key={value?.key} className="font-normal text-[10px] md:text-sm mb-0">{value?.value}</p>
+                        <p key={value?.key} className="font-normal text-xs md:text-sm mb-0">{value?.key}.</p>
+                        <p key={value?.key} className="font-normal text-xs md:text-sm mb-0">{value?.value}</p>
                     </div>
                 ))
             ],
@@ -55,15 +55,15 @@ const PolicyTerms = observer(() => {
             label: `Kebijakan Privasi`,
             key: '2',
             children: [
-                <p className="font-bold text-[10px] md:text-sm text-center mb-2" > Kebijakan Privasi <i> (Privacy Policy)</i></p>,
-                <p className="font-bold text-[11px] md:text-base mb-7">PENTING: <span className="font-normal text-[10px] md:text-sm">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</span></p>,
-                <p className="font-normal text-[10px] md:text-sm mb-7">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>,
-                <p className="font-normal text-[10px] md:text-sm mb-7">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>,
-                <p className="font-bold text-[11px] md:text-base">Ketentuan Umum</p>,
+                <p className="font-bold text-xs md:text-sm lg:text-base text-center mb-2" > Kebijakan Privasi <i> (Privacy Policy)</i></p>,
+                <p className="font-bold text-xs md:text-base mb-7">PENTING: <span className="font-normal text-xs md:text-sm">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</span></p>,
+                <p className="font-normal text-xs md:text-sm mb-7">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>,
+                <p className="font-normal text-xs md:text-sm mb-7">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>,
+                <p className="font-bold text-xs md:text-base">Ketentuan Umum</p>,
                 general_requirements.map(value => (
                     <div className="flex">
-                        <p key={value?.key} className="font-normal text-[10px] md:text-sm mb-0">{value?.key}.</p>
-                        <p key={value?.key} className="font-normal text-[10px] md:text-sm mb-0">{value?.value}</p>
+                        <p key={value?.key} className="font-normal text-xs md:text-sm mb-0">{value?.key}.</p>
+                        <p key={value?.key} className="font-normal text-xs md:text-sm mb-0">{value?.value}</p>
                     </div>
                 ))
             ],

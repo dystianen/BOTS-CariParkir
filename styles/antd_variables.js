@@ -1,5 +1,5 @@
 module.exports = {
-    '@primary-color': '#FFD300',
+    '@primary-color': '#FF9400',
     '@body-background': '#e3e8ee',
     '@font-family': `'Hind Siliguri', sans-serif, 'Montserrat Alternates', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
   'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
