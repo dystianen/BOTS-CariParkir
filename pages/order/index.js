@@ -40,36 +40,49 @@ const Payment = observer(() => {
             <div className={'bg-white m-2 py-4 px-6 rounded-lg'}>
                 <Location/>
 
-                <div className={'mt-5'}>
-                    <Form form={form} layout={'vertical'}>
+                <Form form={form} layout={'vertical'}>
+                    <div className={'mt-5'}>
                         <Form.Item name="phone"
                                    label={<span className={'font-semibold text-xl'}>Nomor Telepon Pembayaran</span>}
                                    rules={[
                                        {required: true, message: "Silahkan masukan Nomor Ponsel!"},
-                                       {min: 10, max: 14, message: "Nomor Ponsel Tidak Sesuai!"},
+                                       {min: 10, max: 14, message: "Nomor Ponsel tidak sesuai!"},
                                    ]}>
                             <Input
                                 type={'number'}
                                 className={'rounded-lg'}
                                 size={'large'}
-                                suffix={<Image src={'/assets/icons/gopay.svg'} width={80} height={30} />}
+                                suffix={<Image src={'/assets/icons/gopay.svg'} width={80} height={30}/>}
                                 placeholder={'080123456789'}/>
                         </Form.Item>
-                    </Form>
 
-                    <p>Dengan melanjutkan, saya telah membaca dan menyetujui <span
-                        className={'text-[#FF9400] underline underline-offset-2'}>Syarat & Ketentuan</span> di
-                        CariParkir.</p>
+                        <p>Dengan melanjutkan, saya telah membaca dan menyetujui <span
+                            className={'text-[#FF9400] underline underline-offset-2'}>Syarat & Ketentuan</span> di
+                            CariParkir.</p>
 
-                    <Divider dashed className={'my-8 border-[#c1c1c1]'} style={{width: '2px 0 0'}}/>
-                </div>
+                        <Divider dashed className={'my-8 border-[#c1c1c1]'} style={{width: '2px 0 0'}}/>
+                    </div>
 
-                <div className={'flex justify-between'}>
-                    <h3 className={'text-lg font-bold'}>Total Pembayaran</h3>
-                    <h3 className={'text-lg font-bold text-[#FF6103]'}>Rp. 99.000</h3>
-                </div>
-                <Button block className={'bg-[#919191] text-white text-xl h-12 rounded-lg'}
-                        onClick={onOpenSheet}>Bayar</Button>
+                    <div className={'flex justify-between'}>
+                        <h3 className={'text-lg font-bold'}>Total Pembayaran</h3>
+                        <h3 className={'text-lg font-bold text-[#FF6103]'}>Rp. 99.000</h3>
+                    </div>
+
+                    <Form.Item shouldUpdate>
+                        {() => (
+                            <Button
+                                disabled={
+                                    !form.isFieldsTouched(true) ||
+                                    !!form.getFieldsError().filter(({errors}) => errors.length).length
+                                }
+                                block
+                                className={`${!form.isFieldsTouched(true) ||
+                                !!form.getFieldsError().filter(({errors}) => errors.length).length ? 'bg-[#919191]' : 'bg-black'} 
+                                text-white text-xl h-12 rounded-lg`}
+                                onClick={onOpenSheet}>Bayar</Button>
+                        )}
+                    </Form.Item>
+                </Form>
             </div>
 
             {/*ADA KENDALA*/}
@@ -134,6 +147,7 @@ Payment.getLayout = function Layout(page) {
     return <DefaultLayout>
         {page}
     </DefaultLayout>;
-};
+}
+;
 
 export default Payment;
