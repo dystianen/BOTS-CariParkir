@@ -7,7 +7,7 @@ const DesktopLayout = ({children}) => {
     return <ParticlesLayout>
         <Layout
             theme={"light"}
-            className={"relative max-w-2xl mx-auto bg-[#fafafa]"}
+            className={"relative max-w-2xl mx-auto bg-[#FFFFFF]"}
             hasSider={true}>
             <Content>
                 <div className={'min-h-screen'}>
